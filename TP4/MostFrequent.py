@@ -7,6 +7,8 @@ L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
 
 counter = [0] * len(L1)
 val = 0
+high = 0
+amount = 0
 
 for i in range(len(L1)):
     for j in L1:
