@@ -17,4 +17,4 @@ money = money % 2
 b.append(money)
 money = money % 1
 
-print(f"{moneyinit} euros, c'est donc {b[0]} billet(s) de 100, {b[1]} de 50, {b[2]} de 10, {b[3]} pièce(s) de 2 et {b[1]} pièce(s) de 1.")
+print(f"{moneyinit} euros, c'est donc {b[0]} billet(s) de 100, {b[1]} de 50, {b[2]} de 10, {b[3]} pièce(s) de 2 et {b[4]} pièce(s) de 1.")
