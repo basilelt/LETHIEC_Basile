@@ -11,7 +11,7 @@ def generer(nbr, vmin, vmax):
     return table
 
 ## Fonction combienInferieur(table, vseuil) pour compter le nombre de valeurs d'un tableau 'table' inférieures à la valeur 'vseuil'
-def combienInferieur(table, vseuil):
+def combienInferieur(table, vseuil = 30):
     j = 0
     for i in table:
         if i < vseuil:
@@ -35,10 +35,12 @@ while test:
     if seuil == "O" or seuil == "Oui":
         vs = (input("Quel valeur voulez-vous en tant que seuil ? : "))
         test = False
+        total = combienInferieur(tab, vs)
+        print(f"Il y en a {total} inférieurs à {vs}")
 
     elif seuil == "N" or seuil == "Non":
-        vs = 30
         test = False
+        total = combienInferieur(tab)
+        print(f"Il y en a {total} inférieurs à 30")
 
-total = combienInferieur(tab, vs)
-print(f"Il y en a {total} inférieurs à {vs}")
+
